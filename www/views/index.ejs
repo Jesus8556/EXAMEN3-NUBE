@@ -1,0 +1,20 @@
+<!-- views/index.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <title>Top Rated Movies</title>
+</head>
+<body>
+  <h1>Top Rated Movies</h1>
+  <ul>
+    <% movies.forEach(movie => { %>
+      <li><%= movie.title %> - Rating: <%= movie.rating %></li>
+    <% }); %>
+  </ul>
+  <button type="button" class="btn btn-primary">Primary</button>
+
+</body>
+</html>
